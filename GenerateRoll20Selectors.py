@@ -26,7 +26,7 @@ DIRS = [
 ]
 
 OUTPUT_DIR = "css"
-OUTPUT_FILE = "spell_selectors.css"
+OUTPUT_FILE = "selectors.css"
 
 def main():
 	# create output directory if it doesn't exist
@@ -44,7 +44,7 @@ def main():
 		files = []
 
 		for entry in os.listdir(directory):
-			if entry.lower().endswith(".jpg") or entry.lower().endswith(".svg"):
+			if entry.lower().endswith(".jpg") or entry.lower().endswith(".png"):
 				files.append(entry)
 
 		files.sort()
@@ -58,7 +58,7 @@ def main():
 
 			file_url = BASE_URL + encoded_dir + "/" + encoded_filename
 
-			out.write('.macrobox[data-macroid*="' + encoded_selector + '"] {\n')
+			out.write('.macrobox[data-macroid$="' + encoded_selector + '"] {\n')
 			out.write('\tbackground-image: url(' + file_url + ');\n')
 			out.write('}\n\n')
 
