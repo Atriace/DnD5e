@@ -3,11 +3,17 @@ import urllib.parse
 
 BASE_URL = "https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Spells/"
 SPELL_DIRS = ["Spells", "Homebrew_Spells"]
+OUTPUT_DIR = "css"
 OUTPUT_FILE = "spell_selectors.css"
 
 def main():
+	# create output directory if it doesn't exist
+	if not os.path.exists(OUTPUT_DIR):
+		os.makedirs(OUTPUT_DIR)
+
 	total_files = 0
-	out = open(OUTPUT_FILE, "w", encoding="utf-8")
+	out_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
+	out = open(out_path, "w", encoding="utf-8")
 
 	for directory in SPELL_DIRS:
 		if not os.path.exists(directory):
@@ -39,7 +45,7 @@ def main():
 
 	out.close()
 
-	print("Generated " + str(total_files) + " selectors into " + OUTPUT_FILE)
+	print("Generated " + str(total_files) + " selectors into " + out_path)
 
 if __name__ == "__main__":
 	main()
