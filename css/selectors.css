@@ -5010,12 +5010,28 @@
 	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Arc%20Zap.jpg);
 }
 
+.macrobox[data-macroid$="Bolt%20Dash"] {
+	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Bolt%20Dash.jpg);
+}
+
+.macrobox[data-macroid$="Downpour"] {
+	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Downpour.jpg);
+}
+
+.macrobox[data-macroid$="Gale"] {
+	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Gale.jpg);
+}
+
 .macrobox[data-macroid$="Ion%20Well"] {
 	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Ion%20Well.jpg);
 }
 
 .macrobox[data-macroid$="Ocular%20Haze"] {
 	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Ocular%20Haze.jpg);
+}
+
+.macrobox[data-macroid$="Phantom%20Cage"] {
+	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Phantom%20Cage.jpg);
 }
 
 .macrobox[data-macroid$="Shock%20Weapon"] {
@@ -5032,5 +5048,9 @@
 
 .macrobox[data-macroid$="Volt%20Step"] {
 	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Volt%20Step.jpg);
+}
+
+.macrobox[data-macroid$="Whirlwind"] {
+	background-image: url(https://raw.githubusercontent.com/Atriace/DnD5e/refs/heads/main/Homebrew_Spells/Whirlwind.jpg);
 }
 
